@@ -46,19 +46,19 @@ export const portfolioData = {
     {
       title: "Demo: Sistema Financeiro",
       description: "Demonstração completa das funcionalidades do sistema de gestão financeira.",
-      videoUrl: '/videos/video_exemplo.mp4',
+      videoUrl: '/videos/video-sistema.mp4',
       thumbnail: thumbFinanceiro, 
     },
     {
       title: "Tutorial: API com Node.js",
       description: "Passo a passo sobre como construir uma API RESTful segura e eficiente.",
-      videoUrl: '/videos/video_exemplo.mp4',
+      videoUrl: '/videos/video-api.mp4',
       thumbnail: thumbApiNodejs, 
     },
     {
       title: "Apresentando o App Mobile",
       description: "Um tour pelas principais telas e funcionalidades do aplicativo de e-commerce.",
-      videoUrl: '/videos/video_exemplo.mp4',
+      videoUrl: '/videos/video-app.mp4',
       thumbnail: thumbAppMobile, 
     },
   ],

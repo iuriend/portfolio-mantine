@@ -21,7 +21,7 @@ const Projects = () => {
             radius="xl"
         >
             <Icon style={{ width: rem(36), height: rem(36) }} stroke={1.5} />
-        </ThemeIcon> {/* <-- A CORREÇÃO ESTÁ AQUI */}
+        </ThemeIcon> {/* <-- */}
 
         <Text fw={700} size="xl" mt="lg">{project.title}</Text>
         <Text mt="sm" c="dimmed" size="sm">{project.description}</Text>

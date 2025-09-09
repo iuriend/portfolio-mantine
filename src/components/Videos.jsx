@@ -16,7 +16,7 @@ const Videos = () => {
     >
       <Card.Section>
         <Image
-          src={video.thumbnail} // <-- A MUDANÇA É AQUI
+          src={video.thumbnail}
           height={180}
           alt={`Thumbnail for ${video.title}`}
         />
