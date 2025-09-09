@@ -1,23 +1,22 @@
 // src/data.js
 
-// Importação das imagens que estão na pasta src/assets.
 import profilePic from './assets/images/profile.jpg';
 import projectThumb1 from './assets/images/placeholder-600x400.png';
-
-// Importando das thumbnails
 import thumbFinanceiro from './assets/images/thumb-financeiro.jpg';
 import thumbApiNodejs from './assets/images/thumb-api-nodejs.jpg';
 import thumbAppMobile from './assets/images/thumb-app-mobile.jpg';
 
+// Variável com o caminho base
+const BASE_PATH = import.meta.env.BASE_URL;
 
 export const portfolioData = {
   name: "Iuri Santana",
   title: "Analista e Desenvolvedor de Sistemas",
   profilePic: profilePic,
-  contactEmail: "iuri.enderson@souunit.com.br",
+  contactEmail: "seu-email@dominio.com",
   socialLinks: {
-    linkedin: "https://linkedin.com/school/unit-br/",
-    github: "https://github.com/iuriend",
+    linkedin: "https://linkedin.com/in/seu-usuario",
+    github: "https://github.com/seu-usuario",
   },
   projects: [
     {
@@ -46,19 +45,19 @@ export const portfolioData = {
     {
       title: "Demo: Sistema Financeiro",
       description: "Demonstração completa das funcionalidades do sistema de gestão financeira.",
-      videoUrl: '/videos/video-sistema.mp4',
+      videoUrl: ${BASE_PATH}videos/video-sistema.mp4,
       thumbnail: thumbFinanceiro, 
     },
     {
       title: "Tutorial: API com Node.js",
       description: "Passo a passo sobre como construir uma API RESTful segura e eficiente.",
-      videoUrl: '/videos/video-api.mp4',
+      videoUrl: ${BASE_PATH}videos/video-api.mp4,
       thumbnail: thumbApiNodejs, 
     },
     {
       title: "Apresentando o App Mobile",
       description: "Um tour pelas principais telas e funcionalidades do aplicativo de e-commerce.",
-      videoUrl: '/videos/video-app.mp4',
+      videoUrl: ${BASE_PATH}videos/video-app.mp4,
       thumbnail: thumbAppMobile, 
     },
   ],
@@ -67,19 +66,19 @@ export const portfolioData = {
       icon: "FileText",
       title: "Arquitetura de Microsserviços",
       description: "Apresentação sobre os conceitos, vantagens e desafios da arquitetura de microsserviços.",
-      fileUrl: '/presentations/apresentacao_exemplo.pptx',
+      fileUrl: ${BASE_PATH}presentations/apresentacao_exemplo.pptx,
     },
     {
       icon: "BarChart2",
       title: "Visualização de Dados com D3.js",
       description: "Slides da palestra sobre como criar gráficos interativos para a web utilizando a biblioteca D3.js.",
-      fileUrl: '/presentations/apresentacao_exemplo.pptx',
+      fileUrl: ${BASE_PATH}presentations/apresentacao_exemplo.pptx,
     },
     {
       icon: "Shield",
       title: "Segurança em Aplicações Web",
       description: "Material sobre as principais vulnerabilidades e como proteger suas aplicações de ataques.",
-      fileUrl: '/presentations/apresentacao_exemplo.pptx',
+      fileUrl: ${BASE_PATH}presentations/apresentacao_exemplo.pptx,
     },
   ],
 };
