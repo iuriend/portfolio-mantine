@@ -10,7 +10,7 @@ const About = () => {
         <Grid.Col span={{ base: 12, md: 5 }}>
           <Image
             radius="md"
-            src="https://placehold.co/600x600/25262b/9c72c4?text=Sua+Foto"
+            src={portfolioData.profilePic}
             alt={`Foto de ${portfolioData.name}`}
           />
         </Grid.Col>
